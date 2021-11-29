@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    body {
+        display: flex;
+        min-height: 100vh;
+        background: darkgrey;
+        flex-direction: column;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    header,footer {
+        background-color: turquoise;
+        height: 10vh;
+        margin-left: 20px;
+        margin-right: 20px;
+    
+    }
+    #container {
+        display: flex;
+        flex: 1;
+        gap: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    Aside {
+        background:pink;
+        flex: 1;
+    }
+    Article {
+        background: red;
+        flex: 2;
+    }
+    Header {
+        margin-top: 20px;
+    }
+    Footer {
+        margin-bottom: 20px;
+    }
+    #container2 {
+        display: flex;
+        gap: 50px;
+        flex-grow: 2;
+        justify-content: center;
+        margin-top: 200px;
+        
+    }
+    .flex-item {
+        display: flex;
+        width: 200px;
+        height: 200px;
+        border: 2px solid;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    </style>
+</head>
+<body>
+    <header>Header </header>
+    <div id="container" >
+        <aside>Aside</aside>
+        <article> 
+            <p>ARTICLE</p>
+            <div id="container2">
+            
+            <div class="flex-item">
+                <img src="...." alt="">
+            </div>
+            <div class="flex-item">
+            </div>
+            <div class="flex-item">
+            </div>
+        </div>
+        </article>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
